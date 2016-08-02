@@ -1,0 +1,78 @@
+form.username{
+  text-align: center;
+border: 2px solid brown;
+width: 18rem;
+height: 21rem;
+margin: auto;
+margin-top: 10rem;
+background: pink;
+}
+
+input.username{
+  height: 2rem;
+width: 11rem;
+}
+
+input.password{
+  height: 2rem;
+width: 11rem;
+}
+input.submit{
+  text-decoration: none;
+  text-style: none;
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 7px 23px;
+  font-size: 15px;
+  font-family: monospace;
+  letter-spacing: 0.1rem;
+
+}
+
+.login{
+  font-family: monospace;
+font-size: 1.3rem;
+}
+
+div#contactPage{
+  border: 2px solid brown;
+  width: 21rem;
+  text-align: center;
+  margin-left: 24rem;
+  border: 2px solid;
+width: 21rem;
+text-align: center;
+margin-left: 24rem;
+background: pink;
+color: brown;
+}
+
+
+.fullName input{
+  text-decoration: none;
+text-style: none;
+border: none;
+color: white;
+padding: 7px 23px;
+font-size: 15px;
+font-family: arial;
+letter-spacing: 0.1rem;
+text-align: center;
+font-family: arial;
+}
+
+h3{
+  font-family: arial;
+  color:brown;
+}
+
+h1{
+  font-family: arial;
+    font-size: 2.5rem;
+color:brown;
+}
+
+input.btnSubmit{
+  background-color: brown;
+}

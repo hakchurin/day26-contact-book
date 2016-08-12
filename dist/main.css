@@ -46,7 +46,6 @@ div#contactPage {
   text-decoration: none;
   text-style: none;
   border: none;
-  color: white;
   padding: 7px 23px;
   font-size: 15px;
   font-family: arial;
@@ -65,5 +64,13 @@ h1 {
 
 input.btnSubmit {
   background-color: brown; }
+
+.hidden .email {
+  display: none; }
+.hidden .phone {
+  display: none; }
+
+ul#contactList {
+  list-style-type: decimal; }
 
 /*# sourceMappingURL=main.css.map */

@@ -28,13 +28,6 @@ const Router = Backbone.Router.extend({
       $('.contact').empty();
       $('.signUp').empty();
   },
-  contactFunction: function() {
-    let headerView = new HeaderView();
-    headerView.render()
-      $('.contact').append(headerView.$el).append(ContactInfo);
-      $('.login').empty();
-      $('.signUp').empty();
-  },
   signupFunction: function() {
     let headerView = new HeaderView();
     headerView.render();
@@ -44,22 +37,40 @@ const Router = Backbone.Router.extend({
 
       console.log('hi');
   },
+
+
+  contactFunction: function() {
+    let headerView = new HeaderView();
+    headerView.render()
+      $('.contact').append(headerView.$el).append(ContactInfo);
+      $('.login').empty();
+      $('.signUp').empty();
+  },
+
   contactModelFunction: function() {
     contactInfo.fetch({
+      success: function(){
+        let contactStorage = contact(renderContacts);
+        $('.contact').empty().append(renderContacts);
+
+      },
         headers: {
             Authorization: 'Kinvey' + session.authtoken
         }
     });
-    let contactStorage = contact(contactInfo);
-    $('.contact').empty().append(contactInfo);
+
   },
+
   uploadContactFunction: function(){
   contactCollection.fetch ({
       success: function() {
+        let
           renderContacts();
       }, error: function(response) {
       }});
   },
+
+
   newContact : function() {
     let contactForm = renderContactForm();
     contactList.append(contactForm);

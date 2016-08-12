@@ -53,7 +53,6 @@ color: brown;
   text-decoration: none;
 text-style: none;
 border: none;
-color: white;
 padding: 7px 23px;
 font-size: 15px;
 font-family: arial;
@@ -75,4 +74,19 @@ color:brown;
 
 input.btnSubmit{
   background-color: brown;
+}
+
+
+.hidden{
+  .email{
+    display:none;
+  }
+  .phone{
+    display:none;
+  }
+}
+
+
+ul#contactList{
+      list-style-type: decimal;
 }

@@ -19,11 +19,7 @@ const DisplayContact = Backbone.View.extend({
       console.log('rendering contact');
       this.$el.append(this.template());
     }
-  //   uploadedContacts: function(evt){
-  //   evt.preventDefault();
-  //   router.navigate('uploadContact', {trigger:true});
-  //
-  // }
+
 
   });
 

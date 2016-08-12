@@ -15,7 +15,7 @@ function loginInfo() {
     <h3>Username</h3>
     <input type="text" name="title" class="username" placeholder="Username">
     <h3> Password</h3>
-    <input type="text" name="title" class="password" placeholder="Password">
+    <input type="password" name="title" class="password" placeholder="Password">
     <p>
     <input type="submit" class="submit" name="submit" value="submit">
     </p>
@@ -43,6 +43,8 @@ function loginInfo() {
                 session.username = username;
                 session.authtoken = response._kmd.authtoken;
                 router.navigate('contact', {trigger:true});
+                $('.username').val('');
+                $('.password').val('');
             },
             error: function(response) {
             }

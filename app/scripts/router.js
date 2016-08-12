@@ -61,14 +61,14 @@ const Router = Backbone.Router.extend({
 
   },
 
-  uploadContactFunction: function(){
-  contactCollection.fetch ({
-      success: function() {
-        let
-          renderContacts();
-      }, error: function(response) {
-      }});
-  },
+  // uploadContactFunction: function(){
+  // contactCollection.fetch ({
+  //     success: function() {
+  //       let renderContacts();
+  //     },
+  //     error: function(response) {
+  //     });
+  // },
 
 
   newContact : function() {
